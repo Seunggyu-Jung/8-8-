@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>생활코딩 8월 8일 학습</title>
+    <style>
+        .js {
+            font-weight: bold;
+            color: red;
+        }
+
+    </style>
+
+    <script>
+        function setfontcolor(color){
+            document.querySelector('body').style.Color = color;
+        }
+        function setcolor(color) {
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while (i < alist.length) {
+                alist[i].style.color = color;
+                i = i + 1;
+            }
+
+            function nightdayHandler(self) {
+                var target = document.querySelector('body')
+                if (self.value === 'night') {
+                    setfontcolor('white');
+                    target.style.backgroundColor = 'black';
+                    self.value = 'day';
+                    setcolor('powderblue');
+                }
+
+            }
+        else
+            {
+                target.style.backgroundColor = 'white';
+                setfontcolor('black');
+                self.value = 'night';
+                setcolor('blue');
+            }
+
+        }
+///해당 함수들을 하나의 객체로 나타내어 보다 코드를 간편하게 만드는 작업이 필요
+    </script>
+
+</head>
+<body>
+<h1><a href="0808자바스크립트.html">WEB</a></h1>
+<h2><a href="0808자바스크립트.html">HTML</a></h2>
+<h2><a href="0808자바스크립트.html">CSS</a></h2>
+<h2><a href="0808자바스크립트.html">Javascript</a></h2>
+
+<input type="button" value="night" onclick="
+ nightdayHandler(this)
+">
+
+
+</body>
+</html>
