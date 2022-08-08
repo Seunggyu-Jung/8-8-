@@ -57,15 +57,30 @@ sum(2,3)
 - return은 함수의 출력값과 관련된 것 : return을 통해 출력하면, 다양한 용도로 사용가능하기에 기능성면에서 큰 이득을 준다. 
 
 - 태그 안에 CSS(글자 색 바꿈)값을 주고 싶은 경우 : ```style = "color:red"```
-
+ex).
+```
+    function sum(left, right) {
+         return left + right;
+     }
+     document.write('<div style = "color:red">'+sum(5,7)+'</div>');
+```
 
 - 태그 안에서 CSS(글자 크기)값을 주고 싶은 경우: ```style = "font-size:*rem"```
+ex).
+```
+    function sum(left, right) {
+         return left + right;
+     }
+     document.write('<div style = "font-size: 3rem">'+sum(5,7)+'</div>');
+```
 
 - 각 태그가 괄호에 들어가면 ' ' 넣어주기
 
 - ***함수를 만들때, 변수가 this로 묶여있으면, 함수의 매개변수를 self로 받고 바디 태그에서는 this로 표현한다!!!
 
 
-## 3). 객체(object): 서로 연관된 함수나 변수를 그룹핑해서 정리정돈하는 것, 폴더와 비슷한 역할
+## 3). 객체(object): 
+
+```서로 연관된 함수나 변수를 그룹핑해서 정리정돈하는 것, 폴더와 비슷한 역할```
 
 - 해당 함수들을 하나의 객체로 나타내어 보다 코드를 간편하게 만드는 작업이 필요
