@@ -26,7 +26,8 @@
 - 함수의 역할: 반복되고 복잡한 코드를 함수의 형태로 정리하여 간결하고 효율적인 코드로 바꿔줌
 
 - 스크립트 태그 밑에 함수를 만들어서 작성
-```function two(){
+```
+function two(){
  document.write('<li>2-1</li>');
  document.write('<li>2-2</li>');
  }
@@ -41,7 +42,8 @@
 - parameter 와 argument는 함수의 입력값과 관련된 것
 
 ex). 
-```function sum(left,right){
+```
+function sum(left,right){
 document.write(left + right + '<br>');
 }
 sum(2,3)
